@@ -2,7 +2,7 @@ from selenium import webdriver
 class FactoryManager():
 
     @staticmethod
-    def createDriver(drivertype):
+    def create_driver(drivertype):
         if drivertype == 'Edge':
             driver = webdriver.Edge(executable_path="../drivers/msedgedriver");
         elif drivertype=='Firefox':
