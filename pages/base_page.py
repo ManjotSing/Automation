@@ -16,6 +16,7 @@ class BasePage(object):
         element = self.find_element(*locator)
         hover = ActionChains(self.driver).move_to_element(element)
         hover.perform()
+        self.driver.implicitly_wait(10);
 
     def wait_element(self, *locator):
         try:

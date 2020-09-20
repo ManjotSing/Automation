@@ -1,5 +1,5 @@
 from selenium import webdriver
-class FactoryManager():
+class DriverFactory():
 
     @staticmethod
     def create_driver(drivertype):
